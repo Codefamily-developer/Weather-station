@@ -1,0 +1,294 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  font-size: 120%;
+}
+
+.tt
+{ 
+  color: white;
+  font-size: 10px;
+  display: inline; 
+  text-align: center;
+  padding-left: 250px; 
+ }
+
+.tt2
+{
+  display: inline;
+}
+
+.card {
+  position: relative;
+  background: #000000d0;
+  color: white;
+  padding: 1.8em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 435px;/*420*/
+  margin: 4em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.b1 {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+.b1:hover {
+  background: #7c7c7c6b;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.city{display: inline;}
+
+/*-------------------------------------------------------*/
+
+
+.board {
+
+  column-count: 2;
+    color: red;
+    width: 100%;
+    padding-left: 1px;
+    padding-bottom: 5px;
+}
+.container h2 {
+  display:inline;
+  padding-top: 1px;
+  padding-left: 200px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+   font-weight: 100;
+
+}
+img#flag {
+    height: 20px;
+    width: 20px;
+}
+.card1 {
+    width: 95%;
+    padding: 1%;
+    margin-bottom: 0.1px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.card1 h5 {
+  display:inline;
+    margin: 0;
+    font-size: 11px;
+     font-weight: 100;
+    font-family: Poppins;
+}
+.card1 span {
+     display:inline;
+    font-size: 11px;
+    font-weight: 100;
+    letter-spacing: 0.7px;
+    font-family: Poppins;
+}
+.card1 i {
+    font-size: 1rem;
+    padding-right: 3px;
+    color: white;
+}
+
+.dd{
+
+  padding-left: 10px;
+  display:inline;
+/*  margin-left: 480px;
+  margin-right: auto;*/
+
+}
+#cb {
+  background: #7c7c7c2b;
+  color: white;
+  border: none;
+  padding: 11px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.ci{
+border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(95% - 100px);
+}
+
+
+
+
+@media screen and (max-width: 768px){
+  .board {
+    column-count: 2;
+  }
+  .card span {
+    font-size: 2.5rem;
+  }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  font-size: 100%;
+}
+
+.card {
+  position: relative;
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 431px;/*420*/
+  margin: 1em;
+}
+
+.card1 span {
+     display:inline;
+    font-size: 11px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: Poppins;
+}
+ 
+
+.card1 h5 {
+  display:inline;
+    margin: 0;
+    font-size: 11px;
+     font-weight: 100;
+    font-family: Poppins;
+}
+
+
+
+
+}
+@media screen and (max-width: 500px){
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  font-size: 100%;
+}
+
+.card {
+  position: relative;
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 431px;/*420*/
+  margin: 1em;
+}
+
+.card1 span {
+     display:inline;
+    font-size: 11px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: Poppins;
+}
+  .board {
+    column-count: 1;
+  }
+
+
+.card1 h5 {
+  display:inline;
+    margin: 0;
+    font-size: 11px;
+     font-weight: 100;
+    font-family: Poppins;
+}
+
+}
